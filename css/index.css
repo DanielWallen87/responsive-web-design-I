@@ -191,6 +191,86 @@ hr {
 	text-align: center;
 }
 
+/* Begin Service Page Styles */
+
+.services-header-img {
+	width: 100%;
+	border: 0px solid black;
+}
+
+.servHead {
+	margin-left: 15px;
+	font-size: 30px;
+}
+
+.service-boxes {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.service-card {
+	display: flex;
+	flex-flow: column wrap;
+	border: 2px solid black;
+	background: lightgray;
+	width: 45%;
+	margin: 20px;
+}
+
+.service-card h2, p {
+	margin: 15px;
+}
+
+.service-card btn {
+	text-align: center;
+	background: white;
+	border: 1px solid black;
+	width: 100px;
+	height: 25px;
+	margin: 15px;
+}
+
+.service-card btn:hover {
+	cursor: pointer;
+}
+
+.facts {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.facts .facts-half {
+	width: 45%;
+}
+
+.facts h2 {
+	margin-left: 0.75%;
+}
+
+.facts p {
+	line-height: 1.5;
+	margin-left: 1%;
+}
+
+.facts ul {
+	margin-left: 1%;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+.facts ul li {
+	line-height: 2;
+}
+
+.services-info-img {
+	margin-left: 45px;
+}
+
+.serve-end {
+	text-align: center;
+	margin-bottom: 40px; 
+}
+
 /* Responsive Styles */
 
 @media screen and (max-width: 800px) {
@@ -201,10 +281,12 @@ hr {
     }
 
     .center-mobile {
+        flex-direction: column-reverse;
         margin: 0 auto;
     }
 
-    .center-mobile img {
+    .logo {
+        margin-top: 0;
         margin-bottom: 40px;
     }
 
@@ -221,6 +303,36 @@ hr {
         line-height: 1.5;
         margin-bottom: 40px;
     }
+
+    .open-para {
+        min-width: 100%;
+    }
+
+    .services-header-img, .services-info-img {
+        margin: 40px 0;
+    }
+
+    .service-card {
+        margin-left: 0;
+        min-width: 100%;
+    }
+
+    .facts-half {
+        min-width: 100%;
+        display: column;
+    }
+
+	.serve-end {
+		text-align: left;
+	}
+
+	.open-para {
+		width: 50%;
+    }
+    
+    .serve-end p {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -232,7 +344,7 @@ hr {
     nav {
         min-width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
     }
 
@@ -256,6 +368,28 @@ hr {
         min-width: 100%;
         justify-content: center;
         margin-bottom: 40px;
+    }
+
+    .services-header-img {
+        margin-bottom: 40px;
+    }
+
+    .open-para {
+        min-width: 100%;
+    }
+
+    .service-card {
+        margin-left: 0;
+        min-width: 100%;
+    }
+
+    .facts-half {
+        min-width: 100%;
+        display: column;
+    }
+
+    .services-info-img {
+        margin: 40px 0;
     }
 }
 
