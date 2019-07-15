@@ -193,6 +193,12 @@ hr {
 
 /* Begin Service Page Styles  */
 
+#service-top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
 .services-header-img {
 	width: 100%;
     border: 0px solid black;
