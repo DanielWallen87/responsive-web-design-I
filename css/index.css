@@ -191,11 +191,12 @@ hr {
 	text-align: center;
 }
 
-/* Begin Service Page Styles */
+/* Begin Service Page Styles  */
 
 .services-header-img {
 	width: 100%;
-	border: 0px solid black;
+    border: 0px solid black;
+    margin: 40px 0;
 }
 
 .servHead {
@@ -300,8 +301,12 @@ hr {
     }
 
     .contact {
-        line-height: 1.5;
         margin-bottom: 40px;
+    }
+
+    .contact p {
+        line-height: 1;
+        margin-left: 0;
     }
 
     .open-para {
@@ -391,33 +396,4 @@ hr {
     .services-info-img {
         margin: 40px 0;
     }
-}
-
-    /*
-
-	.service-boxes, .facts {
-		flex-direction: column;
-    }
-    
-	header {
-		flex-direction: column;
-	}
-
-	header nav {
-		margin-left: -20px;
-		font-size: 14px;
-	}
-
-	.serve-end {
-		text-align: left;
-	}
-
-	.open-para {
-		width: 50%;
-	}
-
-	Nevermind the previous rant, stubborn persistence 
-	got the job done */
-
-	
 }
